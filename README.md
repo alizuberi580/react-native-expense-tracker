@@ -22,7 +22,6 @@ Add, edit, and view your spending with a clean interface and categorized expense
 |---------------|----------------|-----------------|
 | ![All Expenses](./assets/screenshots/screenshot2.png) | ![Manage Expense](./assets/screenshots/screenshot3.png) | ![Recent Expenses](./assets/screenshots/screenshot1.png) |
 
-*(Save your screenshots in `assets/screenshots/` and rename accordingly.)*
 
 ---
 
