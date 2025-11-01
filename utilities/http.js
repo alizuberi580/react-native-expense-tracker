@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BACKEND_URL = 'https://react-native-course-70cf6-default-rtdb.firebaseio.com'
+const BACKEND_URL = 'https://expense-tracker-b36b4-default-rtdb.firebaseio.com/'
 
 export async function storeExpense(expenseData){
     const response= await axios.post(BACKEND_URL+'/expenses.json', expenseData);
@@ -12,7 +12,7 @@ export async function storeExpense(expenseData){
 export async function fetchExpenses(){
     // promise --> permission to access data
     const response = await axios.get(BACKEND_URL+'/expenses.json');
-
+    console.log(response.data)
     const expenses = [];
     //console.log('innitailizing fetching')
     for(const key in response.data){

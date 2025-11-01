@@ -18,13 +18,16 @@ const RecentExpense = () => {
     async function getExpenses() {
       setIsFetching(true);
       try{
+        console.log('fetching recent expenses')
         const expenses = await fetchExpenses();
+        console.log('fetched all expenses')
         expensesCtx.setExpenses(expenses);
       }catch(error){
         setError('Could not fetch expenses!');
         errorCtx.setErrorTrue()
       }
       setIsFetching(false);
+      
     }
     getExpenses();
   }, []);
